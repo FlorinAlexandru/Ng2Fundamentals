@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { EventsAppComponent } from './events-app.component';
+import { CreateEventComponent } from './events/shared/create-event.component';
 import { EventsListComponent } from './events/events-list.component'
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { NavbarComponent } from './nav/navbar.component';
@@ -22,7 +23,8 @@ import { appRoutes } from './routes';
         EventsListComponent,
         EventThumbnailComponent,
         NavbarComponent,
-        EventDetailsComponent
+        EventDetailsComponent,
+        CreateEventComponent
     ],
     providers: [EventService, ToastrService],
     bootstrap: [EventsAppComponent]
